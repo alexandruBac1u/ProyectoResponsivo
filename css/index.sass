@@ -1,0 +1,158 @@
+@use 'sizes'
+@use 'fonts'
+ 
+body
+    margin: 0
+    font-family: fonts.$default-font
+nav
+    position: sticky
+    display: flex
+    top: 0
+    background-color: white
+    justify-content: space-between
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px
+    ul
+        display: flex
+        column-gap: 2rem
+        li
+            list-style: none
+            font-weight: lighter
+            font-size: 0.8rem
+
+.nav1  
+    display: flex
+    justify-content: center
+    margin-left: 2rem
+
+    img
+        width: 2rem
+        height: auto
+        
+.nav-icons
+    margin-right: 2rem
+    margin-top: 0.4rem
+
+.nav-none
+    display: none   
+
+.HeadPhones-Slider
+    background-color: #F1F1F1
+    width: 100%
+    height: 300px
+    display: flex
+    justify-content: left
+    align-items: center
+    overflow: auto
+    scrollbar-color: rgb(0, 0, 0) rgb(193, 193, 193)
+    scrollbar-width: thin
+    scroll-behavior: smooth
+    .card-Slider
+        width: sizes.$Card-Slider-img-w
+        height: sizes.$Card-Slider-img-h
+        margin: 0 1rem
+        img
+            width: sizes.$Card-Slider-img-w
+            height: 140px
+            margin: 0
+        
+        .card-name
+            background-color: white
+            width: sizes.$Card-Slider-img-w
+            height: 60px
+            margin-top: -6px
+            display: flex
+            align-items: center
+            transition-duration: 200ms
+
+            p
+                padding: 0.5rem
+            &:hover
+                background-color: black
+                color: white
+    
+.article2
+    width: 95vw
+    margin-left: 2%
+    margin-top: 3%
+    color: #6d6d6d
+    display: grid
+    grid-template-columns: 8fr 1fr
+    span
+        text-align: right
+.article2-title
+    display: flex
+    flex-direction: column
+    h2 
+        margin: 0
+        font-weight: 500
+        color: black
+    p
+        width: 75%
+    
+.article3-conts-article
+    width: 95vw
+    margin-left: 2%
+    margin-top: 5%
+    height: 500px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+.card-headphone
+    img
+        width: 100%
+    .text-info
+        h3
+            margin: 0.2rem 0
+        h4
+            margin: 0.2rem 0
+            font-weight: 100
+        p
+            margin: 0.2rem 00
+            color: grey
+
+.article4
+    width: 95vw
+    margin-left: 2%
+    margin-top: 5%
+
+.table-img-headphones
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+        width: 45%
+@media screen and ( max-width: 875px)
+    .nav1  
+        display: none
+    .nav-icons
+        display: none
+    .nav-none
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin: 0 1rem
+        img
+            width: 2rem
+    
+    nav
+        height: 3rem
+    
+    .article2
+        grid-template-columns: 1fr
+
+    .article3-conts-article
+        grid-template-columns: 1fr 1fr     
+
+@media screen and ( max-width:  400px)
+    .HeadPhones-Slider
+        height: 100px
+        .card-Slider
+            height: 60px
+            img
+                display: none
+    .article3-conts-article
+        grid-template-columns: 1fr  
+            
+                
+    
+    
