@@ -221,7 +221,7 @@ table tr {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 697px) {
   .HeadPhones-Slider {
     height: 100px;
   }
