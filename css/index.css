@@ -84,7 +84,7 @@ nav ul li {
 
 .article2 {
   width: 95vw;
-  margin-left: 2%;
+  margin-left: 1%;
   margin-top: 3%;
   color: #6d6d6d;
   display: grid;
@@ -108,7 +108,7 @@ nav ul li {
 }
 
 .article3-conts-article {
-  width: 95vw;
+  width: 93vw;
   margin-left: 2%;
   margin-top: 5%;
   display: grid;
@@ -116,7 +116,10 @@ nav ul li {
 }
 
 .card-headphone img {
-  width: 100%;
+  width: 95%;
+}
+.card-headphone .text-info {
+  width: 85%;
 }
 .card-headphone .text-info h3 {
   margin: 0.2rem 0;
@@ -131,7 +134,7 @@ nav ul li {
 }
 
 .article4 {
-  width: 95vw;
+  width: 92vw;
   margin-left: 2%;
   margin-top: 5%;
 }
@@ -164,7 +167,7 @@ table tr {
   align-items: center;
 }
 .table-img-headphones img {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .table-mobile {
@@ -214,6 +217,9 @@ table tr {
   .article2 span {
     text-align: left;
   }
+  .article3-conts-article {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 400px) {
   .HeadPhones-Slider {
@@ -227,5 +233,16 @@ table tr {
   }
   .article3-conts-article {
     grid-template-columns: 1fr;
+  }
+  .card-headphone .text-info h3 {
+    margin: 0.2rem 0;
+  }
+  .card-headphone .text-info h4 {
+    margin: 0.2rem 0;
+    font-weight: 100;
+  }
+  .card-headphone .text-info p {
+    margin: 0.2rem 0;
+    color: grey;
   }
 }

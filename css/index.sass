@@ -1,6 +1,6 @@
 @use 'sizes'
 @use 'fonts'
- 
+
 body
     margin: 0
     font-family: fonts.$default-font
@@ -72,7 +72,7 @@ nav
     
 .article2
     width: 95vw
-    margin-left: 2%
+    margin-left: 1%
     margin-top: 3%
     color: #6d6d6d
     display: grid
@@ -90,15 +90,16 @@ nav
         width: 75%
     
 .article3-conts-article
-    width: 95vw
+    width: 93vw
     margin-left: 2%
     margin-top: 5%
     display: grid
     grid-template-columns: 1fr 1fr 1fr
 .card-headphone
     img
-        width: 100%
+        width: 95%
     .text-info
+        width: 85%
         h3
             margin: 0.2rem 0
         h4
@@ -109,7 +110,7 @@ nav
             color: grey
 
 .article4
-    width: 95vw
+    width: 92vw
     margin-left: 2%
     margin-top: 5%
     h3
@@ -136,7 +137,7 @@ table
     justify-content: center
     align-items: center
     img
-        max-width: 100%
+        max-width: 95%
 .table-mobile
     display: none
 
@@ -175,6 +176,8 @@ table
     .article2
         span
             text-align: left
+    .article3-conts-article
+        grid-template-columns: 1fr
 @media screen and ( max-width:  400px)
     .HeadPhones-Slider
         height: 100px
@@ -184,6 +187,17 @@ table
                 display: none
     .article3-conts-article
         grid-template-columns: 1fr  
+
+    .card-headphone
+        .text-info
+            h3
+                margin: 0.2rem 0
+            h4
+                margin: 0.2rem 0
+                font-weight: 100
+            p
+                margin: 0.2rem 00
+                color: grey
             
                 
     
