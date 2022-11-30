@@ -111,7 +111,6 @@ nav ul li {
   width: 95vw;
   margin-left: 2%;
   margin-top: 5%;
-  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -137,6 +136,11 @@ nav ul li {
   margin-top: 5%;
 }
 
+table td {
+  text-align: center;
+  width: 1%;
+}
+
 .table-img-headphones {
   display: flex;
   flex-direction: column;
@@ -145,6 +149,10 @@ nav ul li {
 }
 .table-img-headphones img {
   width: 45%;
+}
+
+.table-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 875px) {
@@ -171,6 +179,12 @@ nav ul li {
   }
   .article3-conts-article {
     grid-template-columns: 1fr 1fr;
+  }
+  .table-pc {
+    display: none;
+  }
+  .table-mobile {
+    display: block;
   }
 }
 @media screen and (max-width: 400px) {
