@@ -246,3 +246,8 @@ table tr {
     color: grey;
   }
 }
+@media screen and (max-width: 370px) {
+  table {
+    margin-left: 0;
+  }
+}
